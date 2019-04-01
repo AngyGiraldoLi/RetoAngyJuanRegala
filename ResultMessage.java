@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.finaclefe.questions;
+package .questions;
 
 import co.com.bancolombia.certification.finaclefe.userinterface.hsmg.FirstPage;
 import net.serenitybdd.screenplay.Actor;
