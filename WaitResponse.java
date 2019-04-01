@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.finaclefe.util;
+package .util;
 
 public class WaitResponse {
 	
