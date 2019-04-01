@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.finaclefe.interactions;
+package .certification..interactions;
 
 import org.openqa.selenium.WebDriver;
 
