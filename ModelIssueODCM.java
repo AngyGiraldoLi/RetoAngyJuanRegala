@@ -1,4 +1,4 @@
-package co.com.bancolombia.certification.finaclefe.models;
+package .models;
 
 import cucumber.api.DataTable;
 
