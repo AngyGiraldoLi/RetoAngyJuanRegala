@@ -1,57 +1,39 @@
-
-group 'co.com.bancolombia.certificacion.screenplay'
-version '1.0.0'
-
-
-apply plugin: 'java'
-
-sourceCompatibility = 1.8
-
 repositories {
-
-    maven {
-        url "http://artifactory.bancolombia.corp:80/jcenter/" }
-    maven {
-        url "http://artifactory.bancolombia.corp:80/global-bancolombia/"}
-    maven{
-        url "http://artifactory.bancolombia.corp:80/common-maven/"}
-    maven{
-        url "http://artifactory.bancolombia.corp/maven-bancolombia"}
+mavenLocal()
+jcenter()
 }
-
+ 
 buildscript {
-	repositories {
-
-        maven {
-            url "http://artifactory.bancolombia.corp:80/jcenter/" }
-        maven {
-            url "http://artifactory.bancolombia.corp:80/global-bancolombia/"}
-        maven{
-            url "http://artifactory.bancolombia.corp:80/common-maven/"}
-        maven{
-            url "http://artifactory.bancolombia.corp/maven-bancolombia"}
-    }
-     dependencies {
-        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.2")
-    }
+repositories {
+mavenLocal()
+jcenter()
 }
-
+dependencies {
+classpath("net.serenity-bdd:serenity-gradle-plugin:1.1.1")
+        }
+}
 apply plugin:'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin:"org.sonarqube"
-	
+apply plugin: 'net.serenity-bdd.aggregator'
+ 
 dependencies {
-
+ 
 testCompile 'net.serenity-bdd:serenity-core:1.1.1'
-testCompile 'net.serenity-bdd:serenity-junit:1.1.1'	
+testCompile 'net.serenity-bdd:serenity-junit:1.1.1'        
 testCompile('junit:junit:4.12')
-testCompile('org.assertj:assertj-core:1.7.0')	
-testCompile('org.slf4j:slf4j-simple:1.7.7')	
-compile 'net.serenity-bdd:serenity-core:1.9.9'	
+testCompile('org.assertj:assertj-core:1.7.0')        
+testCompile('org.slf4j:slf4j-simple:1.7.7')        
+ 
+compile 'net.serenity-bdd:serenity-core:1.9.9'        
 compile 'net.serenity-bdd:serenity-junit:1.9.9'
 compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
-compile 'net.serenity-bdd:serenity-screenplay:1.9.9'	
+compile 'net.serenity-bdd:serenity-screenplay:1.9.9'        
 compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
-compile fileTree(dir: 'library', include: ['*.jar'])
+ 
 }
+gradle.startParameter.continueOnFailure = true
+ 
+ 
+
+
