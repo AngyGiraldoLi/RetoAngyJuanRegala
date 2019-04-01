@@ -1,15 +1,15 @@
-package co.com.bancolombia.certification.finaclefe.tasks.issueodcm;
+package cissueodcm;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
-import co.com.bancolombia.certification.finaclefe.models.ModelIssueODCM;
-import co.com.bancolombia.certification.finaclefe.userinterface.odcm.GeneralDetailsdc;
-import co.com.bancolombia.certification.finaclefe.userinterface.odcm.RPartyDetails;
-import co.com.bancolombia.certification.finaclefe.util.Log;
-import co.com.bancolombia.certification.finaclefe.util.Utilidades;
-import co.com.bancolombia.certification.finaclefe.util.WaitResponse;
-import co.com.bancolombia.certification.finaclefe.util.WorkFrame;
+import co.com.bancolombia.certification..models.ModelIssueODCM;
+import co.com.bancolombia.certification..userinterface.odcm.GeneralDetailsdc;
+import co.com.bancolombia.certification..userinterface.odcm.RPartyDetails;
+import co.com.bancolombia.certification..util.Log;
+import co.com.bancolombia.certification..util.Utilidades;
+import co.com.bancolombia.certification..util.WaitResponse;
+import co.com.bancolombia.certification..util.WorkFrame;
 import cucumber.api.DataTable;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
